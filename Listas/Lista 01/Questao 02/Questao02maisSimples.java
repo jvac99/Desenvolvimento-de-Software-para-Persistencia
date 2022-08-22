@@ -28,7 +28,7 @@ public class Questao02maisSimples {
                 ps.println(sc.nextLine());
             }
 
-            sc.close();
+            is.close();
             ps.close();
         }
     }

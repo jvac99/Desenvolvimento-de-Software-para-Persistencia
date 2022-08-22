@@ -41,8 +41,8 @@ public class Questao02 {
                 bw.newLine();
             }
 
-            br.close();
-            bw.close();
+            is.close();
+            os.close();
         }
     }
 }
