@@ -65,7 +65,7 @@ public class Questao01 {
                 if ((i >= n1) && (n2 == 0 || i <= n2))
                     System.out.println(linha);
             }
-            br.close();
+            is.close();
 
         } catch (FileNotFoundException e1) {
             e1.printStackTrace();

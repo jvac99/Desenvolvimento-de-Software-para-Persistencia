@@ -68,6 +68,6 @@ public class Questao01maisSimples {
             i++;
         }
 
-        br.close();
+        is.close();
     }
 }
