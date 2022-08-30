@@ -1,7 +1,6 @@
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -39,6 +38,12 @@ public class Questao02 {
             while ((linha = br.readLine()) != null) {
                 bw.write(linha);
                 bw.newLine();
+                /*
+                 * O bw só vai escrever no arquivo quando ele dar o flush, isso geralmente
+                 * ocorre automaticamente quando ele enche o seu buffer, ou seja, se voce
+                 * colocar uma mensagem pequena, é possível que o flush não esteja ocorrendo.
+                 */
+                bw.flush();
             }
 
             is.close();
