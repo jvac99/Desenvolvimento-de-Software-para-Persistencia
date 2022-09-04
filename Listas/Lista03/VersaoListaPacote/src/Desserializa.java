@@ -1,33 +1,30 @@
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.util.ArrayList;
 import java.util.List;
+
+import model.Filme;
 
 public class Desserializa {
     public static void main(String[] args) {
         FileInputStream fis;
         ObjectInputStream ois;
-        List<Filme> filmes = new ArrayList<Filme>();
-        Filme filme;
+        List<Filme> filmes;
 
         try {
             fis = new FileInputStream("arq.txt");
             ois = new ObjectInputStream(fis);
-            // ele vai cair na exception e vai parar
-            while ((filme = (Filme) ois.readObject()) != null) {
-                filmes.add(filme);
+
+            filmes = (ArrayList<Filme>) ois.readObject();
+
+            for (Filme filme : filmes) {
                 System.out.println(filme);
             }
 
             fis.close();
-        } catch (FileNotFoundException f) {
-            f.printStackTrace();
-        } catch (ClassNotFoundException e) {
+        } catch (Exception e) {
             e.printStackTrace();
-        } catch (IOException e) {
-
         }
+
     }
 }

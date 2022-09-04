@@ -5,6 +5,8 @@ import java.io.ObjectInputStream;
 import java.util.ArrayList;
 import java.util.List;
 
+import model.Filme;
+
 public class Desserializa {
     public static void main(String[] args) {
         FileInputStream fis;
