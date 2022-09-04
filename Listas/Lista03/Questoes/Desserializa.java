@@ -13,14 +13,13 @@ public class Desserializa {
         try {
             fis = new FileInputStream("arq.txt");
             ois = new ObjectInputStream(fis);
-
-            while (true) {
-                filme = (Filme) ois.readObject();
+            // ele vai cair no exception e vai parar
+            while ((filme = (Filme) ois.readObject()) != null) {
                 filmes.add(filme);
                 System.out.println(filme);
             }
 
-            // fis.close();
+            fis.close();
         } catch (Exception e) {
         }
     }
