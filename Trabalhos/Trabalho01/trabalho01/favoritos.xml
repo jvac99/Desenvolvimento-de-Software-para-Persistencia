@@ -1,0 +1,34 @@
+<LinkedHashMap>
+  <meusFavoritosList>
+    <id>1</id>
+    <nome>Regis</nome>
+    <filmes>
+      <id>1</id>
+      <titulo>inception</titulo>
+      <lancamento>2010</lancamento>
+      <diretor>Nolan</diretor>
+      <genero>a‡ao</genero>
+      <duracao>200.0</duracao>
+    </filmes>
+    <musicas>
+      <id>1</id>
+      <titulo>sssdd</titulo>
+      <lancamento>2010</lancamento>
+      <autor>ssddd</autor>
+      <genero>aaaaa</genero>
+      <duracao>12.0</duracao>
+    </musicas>
+  </meusFavoritosList>
+  <meusFavoritosList>
+    <id>2</id>
+    <nome>joao</nome>
+    <livros>
+      <id>1</id>
+      <titulo>harry potter</titulo>
+      <lancamento>2005</lancamento>
+      <autor>j.k</autor>
+      <genero>fantasia</genero>
+      <numPaginas>400</numPaginas>
+    </livros>
+  </meusFavoritosList>
+</LinkedHashMap>

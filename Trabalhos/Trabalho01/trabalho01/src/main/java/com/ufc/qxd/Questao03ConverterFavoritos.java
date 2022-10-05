@@ -2,11 +2,9 @@ package com.ufc.qxd;
 
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.Writer;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.Scanner;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
@@ -28,15 +26,10 @@ public class Questao03ConverterFavoritos {
         Favoritos favoritos;
         XmlMapper xm;
         Writer writer;
-        Scanner scanner;
-        InputStream is = System.in;
         StatefulBeanToCsv<MeusFavoritos> statefulBeanToCsv;
-        String[] header = { "Id", "Nome", "Filmes", "Musicas", "Livros", "Series" };
 
         // Recebendo origem
-        scanner = new Scanner(is);
-        System.out.println("Digite o nome ou a origem do arquivo: ");
-        origem = scanner.nextLine();
+        origem = args[0];
 
         file = new File(origem);
         destino = file.getName();

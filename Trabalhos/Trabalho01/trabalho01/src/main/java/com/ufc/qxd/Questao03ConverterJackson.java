@@ -2,8 +2,6 @@ package com.ufc.qxd;
 
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
-import java.util.Scanner;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -23,8 +21,6 @@ public class Questao03ConverterJackson {
         ObjectMapper om = null;
         Object Object;
         XmlMapper xm = null;
-        Scanner scanner = null;
-        InputStream is = System.in;
         JsonNode jsonTree = null;
         Builder csvSchemaBuilder;
         JsonNode jsonNode;
@@ -32,9 +28,7 @@ public class Questao03ConverterJackson {
         CsvSchema csvSchema = null;
 
         // Recebendo origem
-        scanner = new Scanner(is);
-        System.out.println("Digite o nome ou a origem do arquivo: ");
-        origem = scanner.nextLine();
+        origem = args[0];
 
         file = new File(origem);
         destino = file.getName();

@@ -4,7 +4,6 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-import java.util.Scanner;
 
 import javax.xml.bind.DatatypeConverter;
 
@@ -16,9 +15,7 @@ public class Questao05HashSHA1 {
         byte[] digest;
 
         // Recebendo origem
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Digite o nome do arquivo: ");
-        origem = scanner.nextLine();
+        origem = args[0];
 
         try {
             // Leitura do arquivo de origem.

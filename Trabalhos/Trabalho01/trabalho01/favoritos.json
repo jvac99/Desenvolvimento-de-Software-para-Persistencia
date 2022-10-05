@@ -1,0 +1,38 @@
+{
+  "meusFavoritosList" : [ {
+    "id" : 1,
+    "nome" : "Regis",
+    "filmes" : [ {
+      "id" : 1,
+      "titulo" : "inception",
+      "lancamento" : 2010,
+      "diretor" : "Nolan",
+      "genero" : "a‡ao",
+      "duracao" : 200.0
+    } ],
+    "musicas" : [ {
+      "id" : 1,
+      "titulo" : "sssdd",
+      "lancamento" : 2010,
+      "autor" : "ssddd",
+      "genero" : "aaaaa",
+      "duracao" : 12.0
+    } ],
+    "livros" : [ ],
+    "series" : [ ]
+  }, {
+    "id" : 2,
+    "nome" : "joao",
+    "filmes" : [ ],
+    "musicas" : [ ],
+    "livros" : [ {
+      "id" : 1,
+      "titulo" : "harry potter",
+      "lancamento" : 2005,
+      "autor" : "j.k",
+      "genero" : "fantasia",
+      "numPaginas" : 400
+    } ],
+    "series" : [ ]
+  } ]
+}

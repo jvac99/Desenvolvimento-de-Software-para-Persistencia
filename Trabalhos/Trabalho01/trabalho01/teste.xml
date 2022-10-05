@@ -1,0 +1,12 @@
+<LinkedHashMap>
+  <Pessoas>
+    <id>1</id>
+    <nome>joao</nome>
+    <idade>22</idade>
+  </Pessoas>
+  <Pessoas>
+    <id>2</id>
+    <nome>jose</nome>
+    <idade>30</idade>
+  </Pessoas>
+</LinkedHashMap>
